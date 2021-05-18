@@ -27,6 +27,9 @@ const routePrefix = "/api";
 const fragranceRouter = require("./routes/fragrances");
 app.use(routePrefix + "/fragrances", fragranceRouter);
 
+const powerBillUserRouter = require("./routes/powerBillUser");
+app.use(routePrefix + "/powerBill", powerBillUserRouter);
+
 // spin up the server
 var server = app.listen(5000, function () {
   console.log("server is running");
